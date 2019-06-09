@@ -1,10 +1,10 @@
-#### What is Inventory ?
-
+# What is Inventory ?
+======================================================================
 1. An inventory is a list of hosts that ansible manages.
 2. Inventory location may be specified as follows:
-  * Default: etc/ansible/hosts
-  * Specified by CLI: ```bash ansible -i <filename> ```
-  * Can be set in ansible.cfg
+    * Default: etc/ansible/hosts
+    * Specified by CLI: ```bash ansible -i <filename> ```
+    * Can be set in ansible.cfg
 
 3. The inventory file may contain hosts, patterns, groups, and variables
 4. You may specify the inventory as a directory containing series of inventory files (both static and dynamic).
