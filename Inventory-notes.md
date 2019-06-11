@@ -51,3 +51,9 @@ http_port=8080
 lab[01:99].example.com
 
 ```
+
+### Using variables with Inventory
+* If we are specifying a var to a particular host then create a file with that host name under the directory ``` /home/ansible/inventory/<hostname> ```
+
+* If defining a variable to a group then define it by crating a file with a group name specified in inventory file and add variable in that file.
+```/home/ansible/inventory/<GroupName> ```
