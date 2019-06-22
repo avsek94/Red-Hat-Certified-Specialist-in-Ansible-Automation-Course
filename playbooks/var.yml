@@ -1,0 +1,14 @@
+---
+-  hosts: local
+   vars:
+     inv_files: /home/user/vars/inv.txt
+   tasks:
+   - name: create file
+     file: 
+       path: "{{inv_files}}"
+       state: touch
+   - name: generate inventory
+     lineinfile: 
+       path: "{{inv_file}}"
+       line: "{{groups['workstation'] }}"
+
