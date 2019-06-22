@@ -1,6 +1,6 @@
-#### Variable and Facts
+# Variable and Facts
 
-## what is ansible Variables
+#### What is ansible Variables
 * Review on naming convention
   * letter number and underscore only
 * where can we declare variable
@@ -18,12 +18,16 @@
   * keyvalue pairs
     * Only can be done with yaml formarting
     * two ways to access a Dictionary varibles are :
-        * ```employee['name']```
-        * ```employee.name```
+
+        * ``` employee['name']```
+        * ``` employee.name ```
 
 
 #### Magic Variables
+
 Example of a magic varible is hostvar which can be used to look at facts about the another hosts
 Also, there is a group variables that provides a inventory informations.
 
 jinja2 filters can be useful in manipulating text formats.
+
+  ## Make sure to look-up more for jinja2 filters!!!

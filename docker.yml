@@ -1,0 +1,13 @@
+---
+  - hosts: workstation
+    become: yes
+    tasks:
+      - name: install docker
+        yum:
+          name: docker:ce
+          state: latest
+      - name: start and enable docker
+        service: docker
+        state: started
+        enable: yes
+        
