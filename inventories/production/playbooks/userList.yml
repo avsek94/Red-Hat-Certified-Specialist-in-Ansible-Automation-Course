@@ -9,7 +9,7 @@
         path: "{{ userFile }}"
     - name: list users
       lineinfile:
-        path: "{{ "userFile" }}"
+        path: "{{ userFile }}"
         line: "{{ item }}"
       with_item:
         - "{{ staff }}"
