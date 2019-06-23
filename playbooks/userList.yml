@@ -11,3 +11,7 @@
     lineinfile:
       path: "{{ "userFile" }}"
       line: "{{ item }}"
+    with_item:
+      - "{{ staff }}
+      - "{{ faculty }}"
+      - "{{ other }}"
