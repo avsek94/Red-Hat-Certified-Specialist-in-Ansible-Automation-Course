@@ -1,13 +1,13 @@
 ---
--  hosts: avsek122c.mylabserver.com
+-  hosts: local
    vars:
-     inv_files: /home/user/vars/inv.txt
+      inv_file: /home/ansible/red-Hat-Certified-Specialist-in-Ansible-Automation-Course/vars/inv.txt
    tasks:
    - name: create file
      file:
-       path: "{{inv_files}}"
+       path: "{{ inv_file }}"
        state: touch
    - name: generate inventory
      lineinfile:
-       path: "{{inv_file}}"
-       line: "{{groups['workstation'] }}"
+       path: "{{ inv_file }}"
+       line: "{{ groups['workstation']|join(' ') }}"

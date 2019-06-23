@@ -1,0 +1,2 @@
+['avsek121c.mylabserver.com', 'avsek123c.mylabserver.com', 'avsek124c.mylabserver.com', 'avsek125c.mylabserver.com', 'avsek126c.mylabserver.com']
+avsek121c.mylabserver.com avsek123c.mylabserver.com avsek124c.mylabserver.com avsek125c.mylabserver.com avsek126c.mylabserver.com
